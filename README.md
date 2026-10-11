@@ -4,13 +4,16 @@ Owlance is a local-only expense-management demo. It uses Flutter, Provider/Chang
 
 ## Run
 
+The repository includes `pubspec.lock` so everyone resolves the same package versions. On Windows, install Git, Flutter (Dart SDK is included), and Android Studio with the Android SDK first. Then clone this repository, start an Android emulator (or connect a device with USB debugging), and double-click `run.bat`. The script fetches the pinned Dart/Flutter packages and launches the app.
+
+Alternatively, from the project folder run:
+
 ```powershell
-cd ExpenseManager-reference
 flutter pub get
 flutter run
 ```
 
-For Android, install Android Studio's **Android SDK Command-line Tools**, **Android Emulator**, and an Android system image first. Create/start a device in Device Manager, accept licenses with `flutter doctor --android-licenses`, and confirm setup with `flutter doctor`.
+The first run requires an internet connection to download packages. Flutter and the platform toolchains cannot be bundled into the repository: each user's computer needs a compatible Flutter SDK (Dart >= 3.10.8) and a platform toolchain. For Android, install Android Studio's **Android SDK Command-line Tools**, **Android Emulator**, and an Android system image; create/start a device in Device Manager; accept licenses with `flutter doctor --android-licenses`; and confirm setup with `flutter doctor`. For desktop or web, install the relevant Flutter platform prerequisites instead.
 
 ## Architecture
 

@@ -29,7 +29,7 @@ abstract final class MockUsers {
       name: 'Danish',
       email: 'danish@example.com',
       password: 'Danish@123',
-      avatarEmoji: 'D',
+      avatarEmoji: '🐵',
     ),
     MockUserAccount(
       id: 'OWL-1003',
